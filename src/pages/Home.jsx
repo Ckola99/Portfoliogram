@@ -15,36 +15,43 @@ const Home = () => {
 	})
 
 	return (
-		<div className="">
-			<div className="mx-[14px] mt-5">
+		<div className="mx-[14px] grid gap-5">
+			<div className=" grid grid-cols-[25%_75%] mt-5">
 				<img src={proPic} alt="avatar" className="border h-[100px] w-[100px] rounded-full "/>
-				<div className="">
-					<p>{commits}</p>
-					<p>{repos}</p>
-					<p></p>
+				<div className="grid grid-cols-3 place-items-center text-center font-bold">
+					<p>0 <span className="block">projects</span></p>
+					<p>{repos} <span className="block">repositories</span></p>
+					<p> {commits}<span className="block">commits</span></p>
+
 				</div>
 			</div>
-			<div className="">
-				<h2>christopher kola | frontend developer</h2>
-				<p>a display of skills and creativity</p>
-				<div className="">
+			<div className="text-[12px] font-bold">
+				<h2 className="uppercase">christopher kola | frontend developer</h2>
+				<p className="uppercase text-[10px]">a display of skills and creativity</p>
+				<div className="text-[10px] uppercase">
 					<p>Johannesburg, ZA</p>
 				</div>
-				<div className="">
+				<div className="uppercase text-[10px] ">
 					<p>st(e)m</p>
 				</div>
-				<div className="">
+				<div className="text-[10px] uppercase">
 					<p>christopherkola@gmail.com</p>
 				</div>
-				<div className="">
+				<div className="text-[10px] uppercase">
 					<p>link to resume</p>
 				</div>
 			</div>
-			<div className="">
-				<button>social links</button>
-				<button>message</button>
+			<div className="grid grid-cols-2 gap-5 text-[10px] font-bold">
+				<button className="bg-[#405DE6] h-[35px] text-white rounded-[8px]">Social Links</button>
+				<button className="bg-[#405DE6] h-[35px] text-white rounded-[8px]">Message</button>
 			</div>
-			<div className=""></div>
+			<div className="">
+				{}
+			</div>
+			<div>
+				<div></div>
+				<div></div>
+			</div>
 		</div>
 	);
 };
